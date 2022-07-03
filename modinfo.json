@@ -1,0 +1,33 @@
+ {
+   "context": "client",
+   "identifier": "effect testing",
+   "display_name": "Effect Testing",
+   "description": "A mod that allows for easier and faster effects modding",
+   "author": "Ferretmaster",
+   "version": "1.00",
+   "build": "114475",
+   "date": "2020-6-24",
+   "signature": "not yet implemented",
+
+   
+   "priority": 100,
+   "icon": "",
+    "scenes": {
+        "LiveGame_FloatZone": [
+            "coui://ui/mods/effectTesting/floatzone/effectTestingUI.js"
+
+        ],
+        "live_game": [
+            "coui://ui/mods/effectTesting/live_game/effectFunctions.js",
+            "coui://ui/mods/effectTesting/live_game/effectTesting.js"
+      
+        ],
+	"global_mod_list": [
+            "coui://ui/mods/effectTesting/settings/effectTestingSettings.js"
+        ]
+    },
+    "dependencies": [
+    "com.pa.raevn.rfloatframe"
+    ],
+   "category": ["ui","titans", "in-game"]
+ }

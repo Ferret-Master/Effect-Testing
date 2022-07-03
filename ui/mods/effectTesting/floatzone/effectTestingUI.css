@@ -1,0 +1,133 @@
+.body_panel {
+    min-height: 60px;
+    padding: 0 5px 5px 0px;
+}
+
+/* UTILITY */
+.receiveMouse {
+    pointer-events: all;
+}
+
+.ignoreMouse {
+    pointer-events: none;
+}
+
+/*----- effect
+-----------------------------------------------------------------*/
+
+.title {
+    display: block;
+}
+
+.div_effect_main {
+    width: 373px;
+}
+
+
+
+.div_effect_simcontrol_button {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-left: -8px;
+}
+
+    .div_effect_simcontrol_button img {
+        height: 30px;
+        width: 30px;
+    }
+
+.div_effect_unit_item {
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+}
+
+    .div_effect_unit_item img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .div_effect_unit_item img:hover {
+        background:#00b3ff;
+    }
+
+    .div_effect_unit_item img:active {
+        background:#1e7aa1;
+    }
+
+.div_effect_unit_hover {
+    font-size: 14px;
+}
+
+
+
+
+.div_effect_dock {
+    padding-top:4px;
+    font-size: 200%;
+    box-shadow:0px 0px 5px #000;
+    background-color: rgba(0,0,0,0.5);
+    display:inline-block;
+}
+
+.div_effect_dock.border {
+    border-top:1px solid #1e7aa1;
+}
+
+.div_effect_dock.detach {
+    margin-top: 5px;
+    
+}
+
+.div_effect_bottom_spacer {
+    height: 25px;
+    min-width: 700px;
+}
+
+.effect_lock_icon {
+	height: 20px;
+	position: absolute;
+	left: 400px;
+	bottom: 1px;
+}
+
+.input_chat_text, input[type="text"] {
+    width: 300px;
+    margin:0px;
+}
+
+th, td {
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+.description{
+
+    font-size: 14px;
+}
+  
+.Warning{
+    border-style: solid!important;
+    border-color: red!important;
+    color: #D8000C!important;
+}
+.Valid{
+    border-style: solid!important;
+    border-color: rgb(17, 206, 17)!important;
+    color: rgb(17, 206, 17)!important;
+}
+
+#previousEffectList {
+    text-transform: lowercase;
+  }
+
+#previousUnitList {
+    text-transform: lowercase;
+}
+
+#animList {
+    text-transform: lowercase;
+}
