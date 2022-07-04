@@ -32,7 +32,7 @@ Spawns in an effect/unit puppet at the location of your mouse dependant on the s
 <br>
 Removes the last puppet you placed, mainly for fixing mistakes
 <br>
-<u>Clear All Puppets</u>(shift+c)
+<ins>Clear All Puppets</ins>(shift+c)
 <br>
 Removes all placed puppets, used when you mainly want to reset everything
 <br>
