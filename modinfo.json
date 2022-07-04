@@ -1,17 +1,17 @@
  {
    "context": "client",
-   "identifier": "effect testing",
+   "identifier": "com.pa.ferretmaster.effectTesting",
    "display_name": "Effect Testing",
    "description": "A mod that allows for easier and faster effects modding",
    "author": "Ferretmaster",
    "version": "1.00",
-   "build": "114475",
-   "date": "2020-6-24",
+   "build": "115872",
+   "date": "2020-07-04",
    "signature": "not yet implemented",
-
+   "forum":"https://github.com/Ferret-Master/Effect-Testing",
    
    "priority": 100,
-   "icon": "",
+   "icon": "https://i.imgur.com/18OxRkE.gif",
     "scenes": {
         "LiveGame_FloatZone": [
             "coui://ui/mods/effectTesting/floatzone/effectTestingUI.js"
@@ -29,5 +29,11 @@
     "dependencies": [
     "com.pa.raevn.rfloatframe"
     ],
-   "category": ["ui","titans", "in-game"]
+   "category": [
+    "ui",
+    "titans",
+    "in-game",
+    "particles",
+    "effects"
+    ]
  }
