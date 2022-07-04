@@ -24,26 +24,30 @@ In my case I have made a folder called testing inside the based pa effects folde
 default hotkey is shown
 <br>
 
-<u>Spawn Puppet</u>(shift+z)
+<ins>Spawn Puppet</ins>(shift+z)
 <br>
 Spawns in an effect/unit puppet at the location of your mouse dependant on the selected settings in the ui
-<br>
-<u>Clear Previous Puppet</u>(shift+x)
+
+<ins>Clear Previous Puppet</ins>(shift+x)
 <br>
 Removes the last puppet you placed, mainly for fixing mistakes
 <br>
+
 <ins>Clear All Puppets</ins>(shift+c)
 <br>
 Removes all placed puppets, used when you mainly want to reset everything
 <br>
-<u>Move Previous Puppet</u>(shift+v)
+
+<ins>Move Previous Puppet</ins>(shift+v)
 <br>
 Moves the last puppet you placed to your current mouse location, useful if you messed up placement/want something exact
 <br>
-<u>Follow Cursor</u>(shift+f)
+
+<ins>Follow Cursor</ins>(shift+f)
 <br>
 Spawns a puppet with current settings that follows your cursor. very useful for projectiles simulations. re-use the hotkey to end it<br>
-<u>Set Move Path</u>(shift+g)
+
+<ins>Set Move Path</ins>(shift+g)
 <br>
 Very similar to follow cursor but when you stop it with the hotkey the path you took is saved. puppets can be set to use the last saved path. <br>
 Extremely useful for more advanced projectile testing that is hands off.
