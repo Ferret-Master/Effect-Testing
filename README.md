@@ -17,7 +17,7 @@ While this does work somewhat out of the box there are some things you should kn
 Pa's base files auto refresh, whereas mods do not. We can use this to our advantage by storing effects we are testing somewhere in the base game folder
 <br>
 <br>
-In my case I have made a folder called testing inside the based pa effects folder <b>/pa/effects/specs/testing</b>
+In my case I have made a folder called testing inside the base pa effects folder <b>/pa/effects/specs/testing</b>
 <br>
 <br>the advantage of doing this is that when we spawn new copies of an effect after a file change it will have the new changes.
 <br>The mod also contains an option to let it do this automatically for your last placed effect allowing for very quick iterative testing.
