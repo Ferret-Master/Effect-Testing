@@ -49,7 +49,7 @@ Very similar to follow cursor but when you stop it with the hotkey the path you 
 Extremely useful for more advanced projectile testing that is hands off.
 
 ### <b>The UI </b>
-
+![screenshot](https://user-images.githubusercontent.com/64487611/177117770-5824333d-cb2d-4ca6-814a-5520a98b2f1f.PNG)
 ### <b> What each option does</b>
 
 ### <b> General Tips </b>
