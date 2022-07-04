@@ -61,6 +61,7 @@ function init_puppet_control(api) {
                   if(settingsObject.useUnitEffects == true){
                     //existing unit effects added
                     puppetConfig.fx_offsets = json.fx_offsets;
+                    if(puppetConfig.fx_offsets == undefined){puppetConfig.fx_offsets = []}
                   }
 
                 }
