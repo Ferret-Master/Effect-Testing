@@ -123,6 +123,7 @@ function init_puppet_control(api) {
     },
     
     followPath:function(pathArray, puppetId){
+      if(pathArray == undefined){return}
       if(model.currentlyDrawing == true){return}
       if(puppetId == undefined){return}
       else{puppetId = puppetId.id}
