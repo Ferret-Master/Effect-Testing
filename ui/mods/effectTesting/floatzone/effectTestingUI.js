@@ -1,7 +1,6 @@
 //view model setup
 function EffectModel() {
         var self = this;
-
         //ui related observables
         self.unitError = ko.observable(false);
         self.effectError = ko.observable(false);
@@ -88,6 +87,19 @@ if (localStorage["frames_effect_frame_lockStatus"] == "true") {
     lockFrame("effect_frame");
 }
 
+}
+
+
+var UIExpanded = ko.observable(true);
+
+model.toggleUIExpanded = function(){
+    UIExpanded(!UIExpanded())
+    if (UIExpanded() == true) {
+        $("#effect_visible").attr("src", "coui://ui/mods/effectTesting/img/visible.png");
+    } else  {
+        $("#effect_visible").attr("src", "coui://ui/mods/effectTesting/img/notVisible.png");
+       
+    }
 }
 
 //loads locally stored settings
@@ -249,9 +261,13 @@ ko.computed(function(){
     var animList = ["NONE"];
     var unitModel = effectModel.unitSpec().model;
     if(unitModel !== undefined){
-        if(unitModel.animations !== undefined){
-            animList = animList.concat(_.keys(unitModel.animations))
+        if(!_.isArray(unitModel)){unitModel = [unitModel]}
+        for(var i = 0; i< unitModel.length;i++){
+            if(unitModel[i].animations !== undefined){
+                animList = animList.concat(_.keys(unitModel[i].animations))
+            }
         }
+       
     }
    effectModel.anims(animList)
 })

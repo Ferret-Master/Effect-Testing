@@ -12,14 +12,17 @@
     <!--<script src="bundle://boot/boot.js" type="text/javascript"></script>-->
 </head>
 
-<body class="body_panel">
+<body class="effect_body">
     <div class="div_effect_dock border">
-        <img id='effect_lock' src='' onclick="model.effectLockEvent()" class='effect_lock_icon' />
-        <!-- ko if: UIExpanded -->
-        <div id="effect_main" class="div_effect_main">
+  
+        <div><img id='effect_lock' src='' onclick="model.effectLockEvent()" class='effect_lock_icon' /></div>
+
+        <div><img id='effect_visible' src='' onclick="model.toggleUIExpanded()" class='visible_icon' /></div>
+     
+        <div id="effect_main" class="div_effect_main" data-bind="visible: UIExpanded">
             <div class="div_effect_unit_cont">
 
-                <div div class="header" style="background: rgba(200, 200, 255, 0.3);">Effect Testing</div>
+                <u><div div class="header">Effect Testing</div></u>
                 <h6 class="description"><i>Check settings for hotkeys, red outline means json/path error, green means valid and being used.<br><br>Note: Follow cursor and move paths act badly with more than 1 puppet(engine issue).</i></h6>
                 <div class="section_content">
                     <div class="section_wrapper overall_width">
@@ -248,17 +251,24 @@
         <!-- /ko -->
     </div>
     <br />
-    <img id='effect_lock' src='' data-bind='click: function() { model.effectLockEvent(); }' class='lock_icon' />
+
 </body>
 <script>
     ko.cleanNode(document.getElementById("effect_main"));
     ko.applyBindings(effectModel, document.getElementById("effect_main"));
 
     if (localStorage["frames_effect_frame_lockStatus"] == "true") {
-    $("#effect_lock").attr("src", "coui://ui/mods/effectTesting/img/lock-icon.png");
-} else  {
-    $("#effect_lock").attr("src", "coui://ui/mods/effectTesting/img/unlock-icon.png");
-}
+        $("#effect_lock").attr("src", "coui://ui/mods/effectTesting/img/lock-icon.png");
+    } else  {
+        $("#effect_lock").attr("src", "coui://ui/mods/effectTesting/img/unlock-icon.png");
+    }
+
+    if (UIExpanded() == true) {
+        $("#effect_visible").attr("src", "coui://ui/mods/effectTesting/img/visible.png");
+    } else  {
+        $("#effect_visible").attr("src", "coui://ui/mods/effectTesting/img/notVisible.png");
+       
+    }
 
 </script>
 

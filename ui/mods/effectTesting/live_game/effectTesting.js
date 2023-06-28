@@ -75,7 +75,7 @@ var effectUpdateLoop = function () { //regularly checks currently loaded effect 
 var updateEffectPlusSettings = function(puppet){
 	if(puppet.usedSettings.refreshOnSettingsChange == true){
 		//refresh puppet with new effects on settings change
-		console.log(JSON.stringify(puppet.usedSettings) !== JSON.stringify(model.currentUISettings));
+	
 		if(JSON.stringify(puppet.usedSettings) !== JSON.stringify(model.currentUISettings)){
 					puppet.location.scale = model.currentUISettings.scale;
 					puppet.location.snap = model.currentUISettings.snap;
